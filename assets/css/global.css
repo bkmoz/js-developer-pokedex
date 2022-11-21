@@ -1,24 +1,64 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     box-sizing: border-box;
-}
+  }
+  
+  body {
+    background-image: url(/imagens/indigo.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+  }
+  
+  h1 {
+    font-size: 30pt;
+    margin-bottom: 0;
+  }
+  
+  .autor {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+  }
 
-body {
-    background-color: #f6f8fc;
-}
-
-.content {
+  .autor button {
+    padding: .25rem .5rem;
+    margin: .25rem 0;
+    font-size: 0.9rem;
+    color: rgb(255, 255, 255);
+    background-color:#77c850;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  .content {
     width: 100vw;
     height: 100vh;
     padding: 1rem;
-    background-color: #fff;
-}
+    background-color: rgba(224, 222, 222, 0.5);
+    text-align: center;
 
-@media screen and (min-width: 992px) {
+  }
+  
+  @media screen and (min-width: 992px) {
     .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
-        border-radius: 1rem;
+      max-width: 992px;
+      height: auto;
+      margin: 1rem auto;
+      border-radius: 1rem;
+      background-size: 25%;
+      background-position: 110% -60px;
     }
-}
+  }
+  
+  @media screen and (max-width: 380px) {
+    .content {
+      background-size: 200px;
+      background-position: 150% -40px;
+    }
+  }
+  
